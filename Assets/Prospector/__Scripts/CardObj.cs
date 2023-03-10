@@ -15,11 +15,9 @@ public class CardObj : ScriptableObject
         Hearts,
         Diamonds
     }
+    public bool faceCard;
 
     public List<Sprite> cardSprites;
-
-    public Sprite cardFront;
-    public Sprite cardBack;
 
 
     //0 position is front, 1 position is back
