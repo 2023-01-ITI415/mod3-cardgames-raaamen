@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Prospector : MonoBehaviour
 {
@@ -131,6 +132,27 @@ public class Prospector : MonoBehaviour
         }
     }
 
+    void CheckForGameOver(){
+        if (mine.Count == 0)
+        {
+            GameOver(true);
+            return;
+        }
+        if(drawPile.Count>0) return;
+        foreach (var cp in mine)
+        {
+            if(target.AdjacentTo(cp)) return;
+        }
+        GameOver(false);
+    }
+
+    void GameOver(bool won){
+        if(won) ScoreManager.TALLY(eScoreEvent.gameWin);
+        else ScoreManager.TALLY(eScoreEvent.gameLoss);
+        CardSpritesSO.RESET();
+        SceneManager.LoadScene("__Prospector_Scene_0");
+    }
+
     public static void CARD_CLICKED(CardProspector cp){
         switch (cp.state)
         {
@@ -152,5 +174,6 @@ public class Prospector : MonoBehaviour
                 }
                 break;
         }
+        S.CheckForGameOver();
     }
 }
