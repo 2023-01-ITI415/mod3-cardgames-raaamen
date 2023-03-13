@@ -23,7 +23,7 @@ public class JsonDeck{
     public List<JsonCard> cards = new List<JsonCard>();
 }
 
-public class JsonParseDeck{
+public class JsonParseDeck : MonoBehaviour{
     private static JsonParseDeck S {get; set;}
 
     public TextAsset jsonDeckFile;

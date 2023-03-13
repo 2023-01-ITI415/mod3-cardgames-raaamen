@@ -15,7 +15,7 @@ C:/Users/gumke/Desktop/CircuitStreamStuff/mod3-cardgames-raaamen
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-63883
+50203
 Successfully changed project path to: C:/Users/gumke/Desktop/CircuitStreamStuff/mod3-cardgames-raaamen
 C:/Users/gumke/Desktop/CircuitStreamStuff/mod3-cardgames-raaamen
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/gumke/Desktop/CircuitStreamStuff/mod3-cardgames-raaamen
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [16368] Host "[IP] 192.168.200.97 [Port] 0 [Flags] 2 [Guid] 1607939055 [EditorId] 1607939055 [Version] 1048832 [Id] WindowsEditor(7,sarapptop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [5412] Host "[IP] 192.168.1.206 [Port] 0 [Flags] 2 [Guid] 3454590852 [EditorId] 3454590852 [Version] 1048832 [Id] WindowsEditor(7,sarapptop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [16368] Host "[IP] 192.168.200.97 [Port] 0 [Flags] 2 [Guid] 1607939055 [EditorId] 1607939055 [Version] 1048832 [Id] WindowsEditor(7,sarapptop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [5412] Host "[IP] 192.168.1.206 [Port] 0 [Flags] 2 [Guid] 3454590852 [EditorId] 3454590852 [Version] 1048832 [Id] WindowsEditor(7,sarapptop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 79.04 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 84.23 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.15f1 (e8e88683f834)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/Resources/UnitySubsystems
@@ -67,43 +67,246 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56080
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56048
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.020918 seconds.
+Registered in 0.025734 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 74.40 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 74.65 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.830 seconds
+- Completed reload, in  1.737 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1831ms)
-		BeginReloadAssembly (230ms)
+	ReloadAssembly (1738ms)
+		BeginReloadAssembly (222ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (2ms)
-		EndReloadAssembly (1230ms)
-			LoadAssemblies (226ms)
+		EndReloadAssembly (1152ms)
+			LoadAssemblies (214ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (380ms)
+			SetupTypeCache (268ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (80ms)
-			SetupLoadedEditorAssemblies (594ms)
+			RebuildScriptCaches (75ms)
+			SetupLoadedEditorAssemblies (673ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (20ms)
-				SetLoadedEditorAssemblies (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (75ms)
 				BeforeProcessingInitializeOnLoad (3ms)
-				ProcessInitializeOnLoadAttributes (370ms)
-				ProcessInitializeOnLoadMethodAttributes (126ms)
+				ProcessInitializeOnLoadAttributes (440ms)
+				ProcessInitializeOnLoadMethodAttributes (135ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.008274 seconds.
+Registered in 0.008844 seconds.
 Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.838 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2840ms)
+		BeginReloadAssembly (263ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (15ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (2256ms)
+			LoadAssemblies (165ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (495ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (175ms)
+			SetupLoadedEditorAssemblies (1299ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (148ms)
+				ProcessInitializeOnLoadAttributes (1054ms)
+				ProcessInitializeOnLoadMethodAttributes (60ms)
+				AfterProcessingInitializeOnLoad (19ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (18ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
+Refreshing native plugins compatible for Editor in 1.11 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1716 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 19 unused Assets / (56.1 KB). Loaded Objects now: 2182.
+Memory consumption went from 75.1 MB to 75.1 MB.
+Total: 10.753000 ms (FindLiveObjects: 0.357000 ms CreateObjectMapping: 0.162500 ms MarkObjects: 10.059500 ms  DeleteObjects: 0.171200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 98089.503638 seconds.
+  path: Assets/Prospector/__Scripts/CardSprites.asset
+  artifactKey: Guid(4863c26315b4826479ae479afab56270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prospector/__Scripts/CardSprites.asset using Guid(4863c26315b4826479ae479afab56270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0edb62fffca8faa6d641ced6eedaa6cc') in 0.105262 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 47.343191 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/buttonssosigninemail.png
+  artifactKey: Guid(d24e7e0b75e1a244bb9687d6fd4315ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/buttonssosigninemail.png using Guid(d24e7e0b75e1a244bb9687d6fd4315ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69a5fd4f547334aab34e98eeacac4990') in 0.333175 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.055591 seconds.
+  path: Assets/Prospector/__Scripts/CardSprites.asset
+  artifactKey: Guid(4863c26315b4826479ae479afab56270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prospector/__Scripts/CardSprites.asset using Guid(4863c26315b4826479ae479afab56270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63ef6c6898e01ccb3afbc9639d4f63d8') in 0.024776 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.604694 seconds.
+  path: Assets/Prospector/_Sprites/Suit_Diamond.png
+  artifactKey: Guid(f8c2745f3b53149c595d8fde43185468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prospector/_Sprites/Suit_Diamond.png using Guid(f8c2745f3b53149c595d8fde43185468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f0dcb7f166dae00ace053bf2d7ba7b0') in 0.052182 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.891459 seconds.
+  path: Assets/Prospector/_Sprites/Suit_Club.png
+  artifactKey: Guid(f2e3abd22e9ae4d17ab5c0659ff3e024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prospector/_Sprites/Suit_Club.png using Guid(f2e3abd22e9ae4d17ab5c0659ff3e024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db5bf93fa3a9fe7abe1cae6ba14eedd3') in 0.055153 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.889018 seconds.
+  path: Assets/Prospector/_Sprites/Suit_Heart.png
+  artifactKey: Guid(3f3ffa8970b63467cad6ba98725b1c95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prospector/_Sprites/Suit_Heart.png using Guid(3f3ffa8970b63467cad6ba98725b1c95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abee7e3815dbdea3ccd88af06986a1d9') in 0.048873 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.481438 seconds.
+  path: Assets/Prospector/_Sprites/Suit_Spade.png
+  artifactKey: Guid(a7994da692eef4500be008b80674eecb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prospector/_Sprites/Suit_Spade.png using Guid(a7994da692eef4500be008b80674eecb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fd72a6defb6d344aaa3b73f4e3bc688') in 0.051678 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.349629 seconds.
+  path: Assets/Prospector/__Scripts/CardSprites.asset
+  artifactKey: Guid(4863c26315b4826479ae479afab56270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prospector/__Scripts/CardSprites.asset using Guid(4863c26315b4826479ae479afab56270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '074783f600a834e5eeac033beef76330') in 0.021779 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.336747 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconconflicted.png
+  artifactKey: Guid(881798b77426a8f47b533dcc4767e9e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconconflicted.png using Guid(881798b77426a8f47b533dcc4767e9e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55c23f52ddbd4e9c282c089dd6033805') in 0.068280 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconconflictresolvedoverlay.png
+  artifactKey: Guid(056ee72c467a4e24d87541d42839ca72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconconflictresolvedoverlay.png using Guid(056ee72c467a4e24d87541d42839ca72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ee7739fdaaa921001f194cf23c11374') in 0.052399 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconconflictedoverlay@2x.png
+  artifactKey: Guid(a3ced8f7044b9de4787602a9e9b20ea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconconflictedoverlay@2x.png using Guid(a3ced8f7044b9de4787602a9e9b20ea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1534151845ffc1e83f78dd6360f35d2b') in 0.054745 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.066597 seconds.
+  path: Assets/Prospector/_Sprites/FaceCard_11S.png
+  artifactKey: Guid(21570ac654411438d8f6cc233ffb28e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prospector/_Sprites/FaceCard_11S.png using Guid(21570ac654411438d8f6cc233ffb28e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '503df7285c5810e58c3c6defdfcd4faa') in 0.090820 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Prospector/_Sprites/FaceCard_12D.png
+  artifactKey: Guid(4ec6a5b1f47934636a6280e5abb475f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prospector/_Sprites/FaceCard_12D.png using Guid(4ec6a5b1f47934636a6280e5abb475f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '935af16eb41bdd2923879eb5046eb64d') in 0.091433 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.451006 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_stevejobsbuhoshe.png
+  artifactKey: Guid(56e456ab0f7f79a4dbabcc9079c49a94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_stevejobsbuhoshe.png using Guid(56e456ab0f7f79a4dbabcc9079c49a94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2890ad76df83768514f0a2142694b80') in 0.098154 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.241642 seconds.
+  path: Assets/Prospector/_Sprites/FaceCard_13C.png
+  artifactKey: Guid(c6955b0be0ed8469d8907eb75524a9d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prospector/_Sprites/FaceCard_13C.png using Guid(c6955b0be0ed8469d8907eb75524a9d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '987975bc192ee165b740372401a02690') in 0.074738 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.515092 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_stevejobsbuho.png
+  artifactKey: Guid(e92527f6d0fe45342ab542b47346d45f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_stevejobsbuho.png using Guid(e92527f6d0fe45342ab542b47346d45f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae0251c13794477b58f3caca0b44cf10') in 0.083671 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.040314 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_stepok.png
+  artifactKey: Guid(be423a54b981d38428de82ad12534629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_stepok.png using Guid(be423a54b981d38428de82ad12534629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93ca8542ca0f36c8256978f3a15f0882') in 0.084472 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.562323 seconds.
+  path: Assets/Prospector/__Scripts/CardSprites.asset
+  artifactKey: Guid(4863c26315b4826479ae479afab56270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prospector/__Scripts/CardSprites.asset using Guid(4863c26315b4826479ae479afab56270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd120d5007b47bd05cec51efa2aca1ed5') in 0.012441 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.340446 seconds.
+  path: Assets/Prospector/_Sprites/FaceCard_13S.png
+  artifactKey: Guid(a61ea2d4e7838406b97649cd8a3f3f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prospector/_Sprites/FaceCard_13S.png using Guid(a61ea2d4e7838406b97649cd8a3f3f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de3b6f81ee8d6673f92ce31987f5b6f6') in 0.083366 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 56.338041 seconds.
+  path: Assets/Prospector/__Scripts/CardSprites.asset
+  artifactKey: Guid(4863c26315b4826479ae479afab56270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prospector/__Scripts/CardSprites.asset using Guid(4863c26315b4826479ae479afab56270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08496c22934df88c7275f43bf4b0dc42') in 0.044818 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 55.894660 seconds.
+  path: Assets/Prospector/__Scripts/CardSprites.asset
+  artifactKey: Guid(4863c26315b4826479ae479afab56270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prospector/__Scripts/CardSprites.asset using Guid(4863c26315b4826479ae479afab56270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '827dece6e20f94e3332e615d4fd5fc7d') in 0.030514 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 334.025838 seconds.
+  path: Assets/Prospector/_Prefabs/CardPrefab.prefab
+  artifactKey: Guid(bfeca4a7e7e21684a994392b0319bec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prospector/_Prefabs/CardPrefab.prefab using Guid(bfeca4a7e7e21684a994392b0319bec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36b09b0d06c5ef00ed3e1cabd1b946b3') in 0.089982 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.433196 seconds.
+  path: Assets/Prospector/_Prefabs/CardPrefab.prefab
+  artifactKey: Guid(bfeca4a7e7e21684a994392b0319bec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prospector/_Prefabs/CardPrefab.prefab using Guid(bfeca4a7e7e21684a994392b0319bec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c4e6c16d969611ed549ee1bbe51bce2') in 0.041611 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 402.099872 seconds.
+  path: Assets/Prospector/Materials/Mat_ProspectorBackground.mat
+  artifactKey: Guid(c8ca95433cc67409b8b7e8c5fed52cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prospector/Materials/Mat_ProspectorBackground.mat using Guid(c8ca95433cc67409b8b7e8c5fed52cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7254c062027c59a803905a0e17abae9e') in 0.211210 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 103.845805 seconds.
+  path: Assets/Prospector/_Prefabs/PrefabSprite.prefab
+  artifactKey: Guid(30a6ba41f0d264815a76b64a60ee0b62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prospector/_Prefabs/PrefabSprite.prefab using Guid(30a6ba41f0d264815a76b64a60ee0b62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ef3d8baf674e54a68d6ddefa0ca7e86') in 0.019443 seconds 

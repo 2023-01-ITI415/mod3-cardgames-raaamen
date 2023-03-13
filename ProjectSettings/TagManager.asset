@@ -41,9 +41,24 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: CardBacking
-    uniqueID: 4020438241
+  - name: Row0
+    uniqueID: 1262467147
     locked: 0
-  - name: CardFaceElements
-    uniqueID: 2537437829
+  - name: Row1
+    uniqueID: 2352961759
+    locked: 0
+  - name: Row2
+    uniqueID: 1102413045
+    locked: 0
+  - name: Row3
+    uniqueID: 969971129
+    locked: 0
+  - name: Discard
+    uniqueID: 2548077335
+    locked: 0
+  - name: Draw
+    uniqueID: 2242595349
+    locked: 0
+  - name: Target
+    uniqueID: 4187103411
     locked: 0

@@ -136,6 +136,10 @@ GameObject:
   - component: {fileID: 827460512}
   - component: {fileID: 827460510}
   - component: {fileID: 827460509}
+  - component: {fileID: 827460514}
+  - component: {fileID: 827460515}
+  - component: {fileID: 827460516}
+  - component: {fileID: 827460517}
   m_Layer: 0
   m_Name: _MainCamera
   m_TagString: MainCamera
@@ -186,7 +190,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 15
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -217,6 +221,84 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &827460514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827460508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d487b735114107c4e941c2bcda40758c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardSprites: {fileID: 11400000, guid: 4863c26315b4826479ae479afab56270, type: 2}
+  prefabCard: {fileID: 5172751489482919181, guid: bfeca4a7e7e21684a994392b0319bec7,
+    type: 3}
+  prefabSprite: {fileID: 1000014090761352, guid: 30a6ba41f0d264815a76b64a60ee0b62,
+    type: 3}
+  startFaceUp: 1
+  deckAnchor: {fileID: 0}
+  cards: []
+--- !u!114 &827460515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827460508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a73ecb5779d2b54bb224c0f9d8c2f14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jsonDeckFile: {fileID: 4900000, guid: caff80825454742cba113312425f8137, type: 3}
+  deck:
+    decorators: []
+    cards: []
+--- !u!114 &827460516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827460508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a664278162bf2943ac02a5c586d9737, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jsonLayoutFile: {fileID: 4900000, guid: 0579412819a174464adf828afde18c5f, type: 3}
+  layout:
+    multiplier: {x: 0, y: 0}
+    slots: []
+    drawPile:
+      x: 0
+      y: 0
+      layer: 
+      xStagger: 0
+    discordpile:
+      x: 0
+      y: 0
+      layer: 
+      xStagger: 0
+--- !u!114 &827460517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827460508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84d7bd64cd42abb47b9dddcd8723a789, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drawPile: []
+  discardPile: []
+  mine: []
+  target: {fileID: 0}
 --- !u!1 &1277084955
 GameObject:
   m_ObjectHideFlags: 0
