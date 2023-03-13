@@ -79,12 +79,12 @@ public class Prospector : MonoBehaviour
         discardPile.Add(cp);
         cp.transform.SetParent(layoutAnchor);
         cp.SetLocalPos(new Vector3(
-            jsonLayout.multiplier.x*jsonLayout.discordpile.x,
-            jsonLayout.multiplier.y*jsonLayout.discordpile.y,
+            jsonLayout.multiplier.x*jsonLayout.discardpile.x,
+            jsonLayout.multiplier.y*jsonLayout.discardpile.y,
             0)
         );
         cp.faceUp=true;
-        cp.SetSpriteSortingLayer(jsonLayout.discordpile.layer);
+        cp.SetSpriteSortingLayer(jsonLayout.discardpile.layer);
         cp.SetSortingOrder(-200+(discardPile.Count*3));
     }
     void MoveToTarget(CardProspector cp){

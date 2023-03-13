@@ -57,10 +57,8 @@ public class Deck : MonoBehaviour
         cards = new List<Card>();
         Card c;
         string suits = "CDHS";
-        for (int i = 0; i < 4; i++)
-        {
-            for (int j = 0; j <= 13; j++)
-            {
+        for (int i = 0; i < 4; i++){
+            for (int j = 1; j <= 13; j++){
                 c = MakeCard(suits[i], j);
                 cards.Add(c);
                 c.transform.position = new Vector3(
@@ -76,6 +74,7 @@ public class Deck : MonoBehaviour
     {
         GameObject go = Instantiate<GameObject>(prefabCard, deckAnchor);
         Card card = go.GetComponent<Card>();
+        Debug.Log(card.name);
         card.Init(suit,rank,startFaceUp);
         return card;
     }

@@ -48,7 +48,7 @@ public class CardSpritesSO : ScriptableObject
     }
 
     public static Sprite GET_FACE(string name){
-        foreach (var item in S.faceSprites)
+        foreach (Sprite item in S.faceSprites)
         {
             if (item.name == name) return item;
         }

@@ -77,9 +77,11 @@ public class Card : MonoBehaviour
         }
 
         def = JsonParseDeck.GET_CARD_DEF(rank);
+        Debug.Log(def);
         AddDecorators();
         AddPips();
         AddFace();
+        AddBack();
         faceUp = startFaceUp;
    }
 
@@ -95,6 +97,7 @@ public class Card : MonoBehaviour
         _tSprite=CardSpritesSO.GET_FACE(faceName);
         if (_tSprite==null)
         {
+            Debug.Log("face sprite not found");
             return;
         }
         _tGO = Instantiate<GameObject>( Deck.SPRITE_PREFAB,transform ); // d
@@ -106,20 +109,23 @@ public class Card : MonoBehaviour
     }
 
     private void AddBack(){
-        _tGO = Instantiate<GameObject>( Deck.SPRITE_PREFAB,transform );
+        _tGO = Instantiate<GameObject>(Deck.SPRITE_PREFAB,transform);
         _tSRend = _tGO.GetComponent<SpriteRenderer>();
         _tSRend.sprite = CardSpritesSO.BACK;
         _tGO.transform.localPosition = Vector3.zero;
         _tSRend.sortingOrder = 2;
         _tGO.name = "back";
         back = _tGO;
+        Debug.Log(back.name);
     }
 
     private void AddPips()
     {
+        Debug.Log(def.pips);
         int pipNum = 0;
-        foreach (var pip in def.pips)
+        foreach (JsonPip pip in def.pips)
         {
+
             _tGO = Instantiate<GameObject>(Deck.SPRITE_PREFAB,transform);
             _tGO.transform.localPosition=pip.loc;
             if (pip.flip) _tGO.transform.rotation=_flipRot;

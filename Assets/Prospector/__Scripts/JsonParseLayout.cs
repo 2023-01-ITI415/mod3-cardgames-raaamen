@@ -8,7 +8,7 @@ using UnityEngine;
 public class JsonLayout{
     public Vector2 multiplier;
     public List<JSonLayoutSlot> slots;
-    public JsonLayoutPile drawPile, discordpile;
+    public JsonLayoutPile drawPile, discardpile;
 }
 
 [System.Serializable]
@@ -28,7 +28,7 @@ public class JSonLayoutSlot : ISerializationCallbackReceiver
         if (hiddenByString.Length == 0) return;
         string[] bits = hiddenByString.Split(',');
         for (int i=0; i<bits.Length; i++) {
-            hiddenBy.Add( int.Parse(bits[i]) );
+            hiddenBy.Add(int.Parse(bits[i]));
         }
     }
     public void OnBeforeSerialize(){}

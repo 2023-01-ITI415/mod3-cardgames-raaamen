@@ -35,6 +35,7 @@ public class JsonParseDeck : MonoBehaviour{
         }
         S = this;
         deck = JsonUtility.FromJson<JsonDeck>(jsonDeckFile.text);
+        Debug.Log(deck.cards);
     }
 
 
