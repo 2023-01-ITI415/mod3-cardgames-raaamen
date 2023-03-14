@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Prospector : MonoBehaviour
 {
     private static Prospector S;
+    public float roundDelay = 2f;
     public List<CardProspector> drawPile;
     public List<CardProspector> discardPile;
     public List<CardProspector> mine;
@@ -150,6 +151,11 @@ public class Prospector : MonoBehaviour
         if(won) ScoreManager.TALLY(eScoreEvent.gameWin);
         else ScoreManager.TALLY(eScoreEvent.gameLoss);
         CardSpritesSO.RESET();
+        Invoke("ReloadLevel",roundDelay);
+        UITextManager.GAME_OVER_UI(won);
+    }
+
+    void ReloadLevel(){
         SceneManager.LoadScene("__Prospector_Scene_0");
     }
 
