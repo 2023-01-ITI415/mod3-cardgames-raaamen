@@ -5,12 +5,14 @@ using UnityEngine;
 [CreateAssetMenu( fileName = "CardSprites", menuName = "ScriptableObjects/CardSpritesSO")]
 public class CardSpritesSO : ScriptableObject
 {
-    private static CardSpritesSO S;
+    public static CardSpritesSO S;
 
      public Sprite cardBack;
      public Sprite cardBackGold;
      public Sprite cardFront;
     public Sprite cardFrontGold;
+    public Sprite cardFrontSilver;
+    public Sprite cardBackSilver;
 
 
     public Sprite suitDiamond;

@@ -49,6 +49,7 @@ public class ScoreManager : MonoBehaviour
             case eScoreEvent.mine:
                 chain++;
                 scoreRun+=chain;
+                Invoke("TALLY(eScoreEvent.mine)", 0.5f);
                 break;
             case eScoreEvent.draw:
                 

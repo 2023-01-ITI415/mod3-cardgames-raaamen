@@ -10,6 +10,10 @@ public class Prospector : MonoBehaviour
     public List<CardProspector> drawPile;
     public List<CardProspector> discardPile;
     public List<CardProspector> mine;
+
+    public List<CardProspector> potentialSpecialCards;
+
+    public List<float> silverCardChances;
     public CardProspector target;
     private Transform layoutAnchor;
     private Deck deck;
@@ -25,6 +29,7 @@ public class Prospector : MonoBehaviour
         deck.InitDeck();
         Deck.Shuffle(ref deck.cards);
         drawPile =ConvertCardsToCardProspectors(deck.cards);
+        SpecialCards();
         LayoutMine();
         MoveToTarget(Draw());
         UpdateDrawPile();
@@ -43,8 +48,29 @@ public class Prospector : MonoBehaviour
         {
             cp = card as CardProspector;
             listCP.Add(cp);
+            potentialSpecialCards.Add(cp);
         }
+        
         return (listCP);
+    }
+
+    void SpecialCards(){
+        int cardsToMake = 0;
+        for (int i = 0; i < silverCardChances.Count; i++)
+        {
+            float random = Random.value;
+            foreach (var item in silverCardChances)
+            {
+                if (random <= item) cardsToMake++;
+            }
+        }
+
+        for (int i = 0; i < cardsToMake; i++)
+        {
+            int rand = Random.Range(0, potentialSpecialCards.Count);
+            potentialSpecialCards[rand].ConvertToSilver();
+        }
+
     }
 
     void LayoutMine(){
@@ -159,6 +185,8 @@ public class Prospector : MonoBehaviour
         SceneManager.LoadScene("__Prospector_Scene_0");
     }
 
+
+
     public static void CARD_CLICKED(CardProspector cp){
         switch (cp.state)
         {
@@ -174,6 +202,10 @@ public class Prospector : MonoBehaviour
                 if (!cp.AdjacentTo(S.target)) validMatch=false;
                 if (validMatch)
                 {
+                    if (cp.type == eCardType.silver)
+                    {
+                        ScoreManager.TALLY(eScoreEvent.mine);
+                    }
                     S.mine.Remove(cp);
                     S.MoveToTarget(cp);
                     S.SetMineFaceUps();

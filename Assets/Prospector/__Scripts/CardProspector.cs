@@ -8,9 +8,16 @@ public enum eCardState{
         target,
         discard
     }
+
+public enum eCardType{
+    normal,
+    silver,
+    gold
+}
 public class CardProspector : Card
 {
     public eCardState state = eCardState.drawpile;
+    public eCardType type = eCardType.normal;
 
     public List<CardProspector> hiddenBy = new List<CardProspector>();
     public int layoutID;
@@ -19,5 +26,11 @@ public class CardProspector : Card
     public override void OnMouseUpAsButton()
     {
         Prospector.CARD_CLICKED(this);
+    }
+
+    public void ConvertToSilver(){
+        type = eCardType.silver;
+        back.GetComponent<SpriteRenderer>().sprite = CardSpritesSO.S.cardBackSilver;
+        GetComponent<SpriteRenderer>().sprite = CardSpritesSO.S.cardFrontSilver;
     }
 }
