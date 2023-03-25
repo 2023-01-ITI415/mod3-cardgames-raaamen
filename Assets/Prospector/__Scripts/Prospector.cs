@@ -14,6 +14,7 @@ public class Prospector : MonoBehaviour
     public List<CardProspector> potentialSpecialCards;
 
     public List<float> silverCardChances;
+    public List<float> goldCardChances;
     public CardProspector target;
     private Transform layoutAnchor;
     private Deck deck;
@@ -30,6 +31,7 @@ public class Prospector : MonoBehaviour
         Deck.Shuffle(ref deck.cards);
         drawPile =ConvertCardsToCardProspectors(deck.cards);
         SpecialCards();
+        SpecialCardsGold();
         LayoutMine();
         MoveToTarget(Draw());
         UpdateDrawPile();
@@ -69,8 +71,28 @@ public class Prospector : MonoBehaviour
         {
             int rand = Random.Range(0, potentialSpecialCards.Count);
             potentialSpecialCards[rand].ConvertToSilver();
+            potentialSpecialCards.RemoveAt(rand);
         }
 
+    }
+
+    void SpecialCardsGold(){
+        int cardsToMake = 0;
+        for (int i = 0; i < goldCardChances.Count; i++)
+        {
+            float random = Random.value;
+            foreach (var item in goldCardChances)
+            {
+                if (random <= item) cardsToMake++;
+            }
+        }
+
+        for (int i = 0; i < cardsToMake; i++)
+        {
+            int rand = Random.Range(0, potentialSpecialCards.Count);
+            potentialSpecialCards[rand].ConvertToGold();
+            potentialSpecialCards.RemoveAt(rand);
+        }
     }
 
     void LayoutMine(){

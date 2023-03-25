@@ -33,4 +33,10 @@ public class CardProspector : Card
         back.GetComponent<SpriteRenderer>().sprite = CardSpritesSO.S.cardBackSilver;
         GetComponent<SpriteRenderer>().sprite = CardSpritesSO.S.cardFrontSilver;
     }
+    public void ConvertToGold(){
+        type = eCardType.gold;
+        back.GetComponent<SpriteRenderer>().sprite = CardSpritesSO.S.cardBackGold;
+        GetComponent<SpriteRenderer>().sprite = CardSpritesSO.S.cardFrontGold;
+
+    }
 }
