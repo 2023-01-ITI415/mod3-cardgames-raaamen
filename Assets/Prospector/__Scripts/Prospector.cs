@@ -58,13 +58,11 @@ public class Prospector : MonoBehaviour
 
     void SpecialCards(){
         int cardsToMake = 0;
+        float random = Random.value;
         for (int i = 0; i < silverCardChances.Count; i++)
         {
-            float random = Random.value;
-            foreach (var item in silverCardChances)
-            {
-                if (random <= item) cardsToMake++;
-            }
+            if (random <= silverCardChances[i]) cardsToMake++;
+            Debug.Log(cardsToMake);
         }
 
         for (int i = 0; i < cardsToMake; i++)
@@ -78,13 +76,11 @@ public class Prospector : MonoBehaviour
 
     void SpecialCardsGold(){
         int cardsToMake = 0;
+        float random = Random.value;
         for (int i = 0; i < goldCardChances.Count; i++)
         {
-            float random = Random.value;
-            foreach (var item in goldCardChances)
-            {
-                if (random <= item) cardsToMake++;
-            }
+            if (random <= goldCardChances[i]) cardsToMake++;   
+            Debug.Log(cardsToMake);
         }
 
         for (int i = 0; i < cardsToMake; i++)
