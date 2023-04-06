@@ -742,7 +742,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a664278162bf2943ac02a5c586d9737, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jsonLayoutFile: {fileID: 4900000, guid: 0579412819a174464adf828afde18c5f, type: 3}
+  jsonLayoutFile: {fileID: 4900000, guid: 2fb4e7198541b484f9ac1f0eb1743178, type: 3}
   layout:
     multiplier: {x: 0, y: 0}
     slots: []
