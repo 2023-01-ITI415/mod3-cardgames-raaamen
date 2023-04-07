@@ -5,6 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class Prospector : MonoBehaviour
 {
+
+    public enum GameState{
+        Prospector,
+        Golf
+    }
+
+    public static GameState currentGame;
+
     private static Prospector S;
     public float roundDelay = 2f;
     public List<CardProspector> drawPile;
@@ -120,6 +128,7 @@ public class Prospector : MonoBehaviour
 
     }
 
+
     void MoveToDiscard(CardProspector cp){
         cp.state=eCardState.discard;
         discardPile.Add(cp);
@@ -226,7 +235,13 @@ public class Prospector : MonoBehaviour
                     }
                     S.mine.Remove(cp);
                     S.MoveToTarget(cp);
-                    S.SetMineFaceUps();
+                    if (currentGame == GameState.Prospector)
+                    {
+                        S.SetMineFaceUps();
+                    }
+                    if (currentGame == GameState.Golf){
+                        S.SetMineFaceUps();
+                    }   
                 }
                 break;
         }

@@ -116,7 +116,9 @@ public class ScoreManager : MonoBehaviour
     private FloatingScore fsFirstInRun;
 
     private void Start() {
-        ScoreBoard.SCORE = SCORE;
+        Debug.Log("Score obj" +S.score);
+        ScoreBoard.SCORE = S.score;
+        
         canvasTrans=GameObject.Find("Canvas").transform;
     }
     void FloatingScoreHandler(eScoreEvent evt){

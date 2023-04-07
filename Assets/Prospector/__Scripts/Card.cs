@@ -90,6 +90,8 @@ public class Card : MonoBehaviour
     set{back.SetActive(!value);}
    }
 
+   
+
     private void AddFace()
     {
         if (def.face == "") return;

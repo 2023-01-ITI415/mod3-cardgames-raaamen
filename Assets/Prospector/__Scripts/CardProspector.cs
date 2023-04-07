@@ -28,6 +28,17 @@ public class CardProspector : Card
         Prospector.CARD_CLICKED(this);
     }
 
+    public bool clickable{
+        get{
+            if (hiddenBy.Count==0)
+            {
+                return true;
+            }
+            else return false;
+        }
+        private set{}
+   }
+
     public void ConvertToSilver(){
         type = eCardType.silver;
         back.GetComponent<SpriteRenderer>().sprite = CardSpritesSO.S.cardBackSilver;
